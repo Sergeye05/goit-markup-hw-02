@@ -103,8 +103,17 @@ background: #2F303A;
     border-radius: 4px;
     cursor: pointer;
 }
-.section-title-hide {
-    visibility: hidden;
+.visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
 }
 .section-title-advantage {
    font-size: 14px;
@@ -154,9 +163,7 @@ color:var(--primary-text-color);
     background: var(--hero-title-color);
     border: 1px solid #EEEEEE;
 }
-.project-title-hide {
-    visibility: hidden;
-}
+
 .project-title {
 
     font-size: 18px;
