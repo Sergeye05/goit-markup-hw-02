@@ -1,11 +1,16 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 :root {
 --primary-text-color: #757575;
 --section-title-color: #212121;
 --accent-color: #2196F3;
---hero-title-color:#FFFFFF;
+--hero-title-color :#FFFFFF;
 }
 body {
-background: #F5F5F5;
+background color: var(--hero-title-color);
 color:var(--primary-text-color);
 font-family: 'Roboto', sans-serif;
 letter-spacing: 0.03em;
@@ -29,14 +34,13 @@ color:var( --section-title-color );
 .list {
 list-style: none ;
 }
-.header-item {
- color: var(--hero-title-color);
+.current {
+color: var(--accent-color);
 }
 .header-link {
 color: var(--section-title-color);
 text-decoration: none;
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
@@ -50,7 +54,6 @@ color: blueviolet;
 color:var(--primary-text-color); 
 text-decoration: none ;
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
@@ -60,12 +63,10 @@ letter-spacing: 0.02em;
 .contact-email:focus {
     color: blueviolet;
 }
-
 .contact-tel {
 color: var(--primary-text-color);
 text-decoration: none;
 font-weight: 500;
-font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
@@ -75,7 +76,6 @@ color: var(--accent-color);
 .contact-tel:focus {
 color: blueviolet;
 }
-
 .section-title {
 color: var(--hero-title-color); 
 }
@@ -130,7 +130,6 @@ color:var(--primary-text-color);
    line-height: 1.16;
    color: var(--section-title-color);
 }
-
 .team {
     background: #F5F4FA;
 }
@@ -157,13 +156,11 @@ color:var(--primary-text-color);
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    color: var(--primary-text-color);
 }
 .portfolio {
     background: var(--hero-title-color);
     border: 1px solid #EEEEEE;
 }
-
 .project-title {
 
     font-size: 18px;
@@ -204,7 +201,6 @@ color: blueviolet;
 .footer-tel:focus {
 color: blueviolet;
 }
-
 .button-top {
  background-color: var(--accent-color);  
  color: var(--hero-title-color) ;
@@ -215,16 +211,17 @@ color: blueviolet;
  cursor: pointer;
 }
 .button {
-    color: var(--section-title-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    cursor: pointer;
-    font-family: inherit;
-    border: none;
+color: var(--section-title-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+cursor: pointer;
+font-family: inherit;
+border: none;
 }
 .button:hover {
-color: var(--accent-color);
+color: var(--hero-title-color);
+background-color: var(--accent-color);
 }
 .button:focus {
 color: blueviolet;
