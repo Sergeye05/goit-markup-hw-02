@@ -34,15 +34,15 @@ color:var( --section-title-color );
 .list {
 list-style: none ;
 }
-.current {
-color: var(--accent-color);
-}
 .header-link {
 color: var(--section-title-color);
 text-decoration: none;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
+}
+.current {
+    color: var(--accent-color);
 }
 .header-link:hover {
 color: var(--accent-color);
